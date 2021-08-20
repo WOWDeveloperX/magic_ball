@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'dart:math';
+
 void main() => runApp(
       MaterialApp(
         home: BallPage(),
@@ -28,12 +29,11 @@ class Ball extends StatefulWidget {
 }
 
 class _BallState extends State<Ball> {
- 
-int ballNumber = 1;
+  int ballNumber = 0;
 
   void clicked() {
     setState(() {
-      ballNumber = Random().nextInt(5) + 1;
+      ballNumber = Random().nextInt(13) ;
       print('I got clicked $ballNumber');
     });
   }
