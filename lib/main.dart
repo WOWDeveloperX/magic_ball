@@ -11,10 +11,10 @@ class BallPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.blue,
+      backgroundColor: Colors.blue[900],
       appBar: AppBar(
         title: Text('Ask Me Anything'),
-        backgroundColor: Colors.blue[900],
+        backgroundColor: Colors.blue[800],
       ),
       body: Ball(),
     );
@@ -33,7 +33,7 @@ class _BallState extends State<Ball> {
 
   void clicked() {
     setState(() {
-      ballNumber = Random().nextInt(13) ;
+      ballNumber = Random().nextInt(13);
       print('I got clicked $ballNumber');
     });
   }
