@@ -13,7 +13,7 @@ class BallPage extends StatelessWidget {
     return Scaffold(
       backgroundColor: Colors.blue[900],
       appBar: AppBar(
-        title: Text('Ask Me Anything'),
+        title: Center(child: Text('Ask Me Anything')),
         backgroundColor: Colors.blue[800],
       ),
       body: Ball(),
@@ -33,7 +33,7 @@ class _BallState extends State<Ball> {
 
   void clicked() {
     setState(() {
-      ballNumber = Random().nextInt(13);
+      ballNumber = Random().nextInt(13)+1;
       print('I got clicked $ballNumber');
     });
   }
